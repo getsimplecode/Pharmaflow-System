@@ -1,0 +1,115 @@
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "navbar navbar"
+        "sidebar main"
+        "sidebar footer";
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    top: 0;
+    position: sticky;
+    grid-area: navbar;
+    background: linear-gradient(45deg, rgb(0, 170, 153), rgb(0, 163, 147));
+    color: azure;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 2px;
+}
+
+nav .navbar .designs {
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+aside {
+    position: sticky;
+    align-self: start;
+    grid-area: sidebar;
+    height: calc(100vh - 60px);
+    top: 60px;
+    background-color: rgb(249, 255, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-side-nav a,
+.dropdown-btn span {
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 1513  px;
+    color: rgb(0, 82, 51);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+    font-family: "Dosis", serif;
+    font-optical-sizing: auto;
+    font-weight: 00;
+    font-style: normal;
+}
+
+.btn-side-nav a:hover,
+.dropdown-btn span:hover {
+    background-color: bisque;
+    color: rgb(94, 0, 0);
+    cursor: pointer;
+}
+
+.dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #b3ffe8;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.dropdown-content a {
+    padding: 5px 35px;
+    color: rgb(72, 2, 13);
+    display: block;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.dropdown-content a img{
+    margin-right: 4%;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(255, 255, 199);
+}
+
+.dropdown-content.show {
+    max-height: 300px;
+}
+#arrowdown{
+    margin-left: 40%;
+}
+
+
+main {
+    grid-area: main;
+    padding: 5px;
+    font-family: "Dosis", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.row{
+    color: rgb(0, 111, 78);
+}
+
+footer {
+    grid-area: footer;
+    position: sticky;
+    bottom: 0;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 0;
+}
