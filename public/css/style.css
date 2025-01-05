@@ -11,7 +11,7 @@ body {
 }
 
 nav {
-    top: 0;
+    top:0;
     position: sticky;
     grid-area: navbar;
     background: linear-gradient(45deg, rgb(0, 170, 153), rgb(0, 163, 147));
@@ -38,6 +38,7 @@ aside {
     background-color: rgb(249, 255, 255);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 
 .btn-side-nav a,
 .dropdown-btn span {
@@ -90,8 +91,19 @@ aside {
 #arrowdown{
     margin-left: 40%;
 }
-
-
+#boxes {
+    width: 295px;
+    height: 120px;
+    background-color: rgb(238, 238, 238);
+    padding: 10px;
+    margin: 9px;
+    border-radius: 2%;
+    box-shadow: 5px 5px 5px rgb(192, 192, 192);
+    transition: 0.50s;
+}
+#boxes:hover{
+    box-shadow: 10px 10px 5px rgb(192, 192, 192);
+}
 main {
     grid-area: main;
     padding: 5px;
@@ -101,15 +113,13 @@ main {
     font-style: normal;
 }
 
-.row{
-    color: rgb(0, 111, 78);
-}
+
 
 footer {
     grid-area: footer;
-    position: sticky;
-    bottom: 0;
+  
+
     background-color: #f1f1f1;
     text-align: center;
-    padding: 0;
+    
 }

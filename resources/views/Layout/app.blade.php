@@ -81,7 +81,7 @@
         @yield('content')
     </main>
     <footer>
-        <p>&copy; 2024 PharmaFlow Management System. All rights reserved.</p>
+        <p>&copy; 2025 PharmaFlow Management System. All rights reserved.</p>
     </footer>
 
     <script src="{{url('js/script.js')}}"></script>
